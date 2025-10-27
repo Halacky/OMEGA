@@ -1,12 +1,12 @@
-Мы провели изучение структуры данных и вот к каким умозаключениям мы пришли на данном этапе:
-1) В одной сессии жесты следуют последовательно 
-2) Каждый жест повторяется 6 раз и только потом переходит к следующему 
-3) Между каждым повторением следует отдых
-4) На визуализации видно, что разметка не совсем точная, отдых начинается и заканчивается немного раньше (похоже на задержку человеческой реакции).
+We have studied the data structure and these are the conclusions we have reached at this stage:
+1) In one session, the gestures follow sequentially 
+2) Each gesture is repeated 6 times and only then proceeds to the next one. 
+3) Rest should be taken between each repetition.
+4) The visualization shows that the marking is not entirely accurate, rest begins and ends a little earlier (it looks like a delay in human reaction).
 
-Дальнейшие планы:
-Взять данные для одного пацциента и разбить датасет на обучающую и тестовые выборки 2 способами:
-1) **Берем рандомные 4 повторения** 
-2) **Берем последовательно 4 повторения** 
-Каждый из 4 фрагментов с жестом разбиваем на последовательные окна. Так делаем для каждого жеста.
-Далее учим модель определять к какому жесту относится то или инное окно.
+Further plans:
+Take data for one patient and split the dataset into training and test samples in 2 ways:
+1) **We take random 4 repetitions** 
+2) **We take 4 repetitions sequentially** 
+Each of the 4 fragments is divided into consecutive windows with a gesture. We do this for every gesture.
+Next, we teach the model to determine which gesture a particular window belongs to.
