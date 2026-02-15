@@ -1,3 +1,5 @@
+# FILE: config/base.py
+
 from dataclasses import dataclass, asdict
 from typing import Optional, List, Tuple
 import json
@@ -18,7 +20,15 @@ class ProcessingConfig:
     # If both are None, take all channels.
     num_channels: Optional[int] = None
     channel_indices: Optional[List[int]] = None
-    
+
+    # NEW: optional margin (fraction of segment length) to ignore at both edges
+    # when extracting windows from gesture segments. This helps to avoid
+    # transition regions between rest and active gesture.
+    #
+    # Example: segment_edge_margin = 0.1 means we drop first 10% and last 10%
+    # of samples of each segment before windowing.
+    segment_edge_margin: float = 0.0
+
     def save(self, path: Path):
         """Saving configuration"""
         with open(path, 'w') as f:
@@ -46,27 +56,61 @@ class ProcessingConfig:
                                f"The first {k} channels will be used.")
             return list(range(k))
 
-        return list(range(total_channels))  
+        return list(range(total_channels))
+
+@dataclass
+class RotationConfig:
+    rotations: List[int]                 # e.g. [-3,-2,-1,0,1,2,3]
+    bracelet_size: Optional[int] = None  # default == number of channels C
+    channel_order: Optional[List[int]] = None  # mapping input-channel-index -> bracelet position [0..bracelet_size-1]
+    single_segment: Optional[Tuple[int, int]] = None  # (gesture_id, occurrence_idx) for per-segment analysis
 
 @dataclass
 class TrainingConfig:
-    """Training configuration. Window classification"""
     batch_size: int = 256
-    epochs: int = 30
+    epochs: int = 50
     learning_rate: float = 1e-3
     weight_decay: float = 1e-4
     dropout: float = 0.3
     early_stopping_patience: int = 7
     use_class_weights: bool = True
     seed: int = 42
-    num_workers: int = 0  # for DataLoader
+    num_workers: int = 0
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
+
+    model_type: str = "simple_cnn"
+
+    # Existing handcrafted features flags
+    use_handcrafted_features: bool = False
+    handcrafted_feature_set: str = "basic_v1"
+    pipeline_type: str = "deep_raw"
+
+    # Existing ML settings
+    ml_model_type: str = "svm_rbf"
+    ml_use_hyperparam_search: bool = False
+    ml_max_search_configs: int = 20
+    ml_use_feature_selection: bool = False
+    ml_feature_selection_top_k: Optional[int] = None
+    ml_use_pca: bool = False
+    ml_pca_var_ratio: float = 0.99
+
+    # NEW: hybrid powerful deep / domain adaptation settings
+    hybrid_use_domain_adaptation: bool = True
+    hybrid_domain_loss_weight: float = 0.2
+    hybrid_num_domains: int = 2
+    hybrid_grl_lambda: float = 1.0
+    hybrid_hidden_dim: int = 256
+
+    # Data augmentation for EMG windows (applied in WindowClassifierTrainer)
+    aug_apply: bool = False
+    aug_noise_std: float = 0.01
+    aug_time_warp_max: float = 0.1
+    aug_apply_noise: bool = True
+    aug_apply_time_warp: bool = False
 
     def save(self, path: Path):
         with open(path, 'w') as f:
             json.dump(asdict(self), f, indent=4)
-
-
 @dataclass
 class SplitConfig:
     """Spliting config on train/val/test"""
@@ -94,10 +138,3 @@ class SplitConfig:
             raise ValueError("Shares cannot be negative")
         if self.mode not in ("by_windows", "by_segments"):
             raise ValueError("mode must be 'by_windows' or 'by_segments'")
-        
-@dataclass
-class RotationConfig:
-    rotations: List[int]                 # e.g. [-3,-2,-1,0,1,2,3]
-    bracelet_size: Optional[int] = None  # default == number of channels C
-    channel_order: Optional[List[int]] = None  # mapping input-channel-index -> bracelet position [0..bracelet_size-1]
-    single_segment: Optional[Tuple[int, int]] = None  # (gesture_id, occurrence_idx) for per-segment analysis

@@ -17,9 +17,30 @@ class WindowExtractor:
         self.logger = logger
         self.use_gpu = use_gpu and cp.cuda.is_available()
 
+    def _apply_segment_edge_margin(self, segment: np.ndarray) -> np.ndarray:
+        """
+        Optionally drop a small fraction of samples at the beginning and the end
+        of the segment to avoid transition regions (rest <-> gesture).
+
+        The amount is controlled by ProcessingConfig.segment_edge_margin:
+        - 0.0: disable trimming (backward compatible)
+        - 0.1: drop first 10% and last 10% of samples
+        """
+        margin = getattr(self.config, "segment_edge_margin", 0.0)
+        if margin <= 0.0:
+            return segment
+
+        T = segment.shape[0]
+        cut = int(T * margin)
+        # If the segment is too short, skip trimming
+        if cut <= 0 or cut * 2 >= T:
+            return segment
+
+        return segment[cut:-cut, :]
+
     def process_all_segments_grouped(self, segments: Dict[int, List[np.ndarray]]) -> Dict[int, List[np.ndarray]]:
         """
-        Retuen window, grouped by gesture and repeats.
+        Return window, grouped by gesture and repeats.
         {gesture_id: [windows_seg0, windows_seg1, ...]}
         """
         self.logger.info("Extracting windows while preserving repetition structure (by segment)")
@@ -28,7 +49,9 @@ class WindowExtractor:
         for gesture_id, gesture_segments in segments.items():
             grouped[gesture_id] = []
             for seg_idx, segment in enumerate(gesture_segments):
-                windows = self.extract_windows(segment)
+                # Apply segment edge margin before window extraction
+                segment_trimmed = self._apply_segment_edge_margin(segment)
+                windows = self.extract_windows(segment_trimmed)
                 grouped[gesture_id].append(windows)
                 if len(windows) > 0:
                     self.logger.info(
@@ -91,7 +114,9 @@ class WindowExtractor:
             gesture_windows = []
             
             for seg_idx, segment in enumerate(gesture_segments):
-                windows = self.extract_windows(segment)
+                # Apply segment edge margin before window extraction
+                segment_trimmed = self._apply_segment_edge_margin(segment)
+                windows = self.extract_windows(segment_trimmed)
                 
                 if len(windows) > 0:
                     gesture_windows.append(windows)
