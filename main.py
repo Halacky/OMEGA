@@ -19,7 +19,7 @@ from utils.artifacts import ArtifactSaver
 
 def main():
     # Configs
-    BASE_DIR = Path("/home/kirill/projects_2/folium/NIR/OMEGA/data")
+    BASE_DIR = Path(__file__).resolve().parent / "data"
     SUBJECT = "DB2_s1"
     EXERCISE = "E3"
     OUTPUT_DIR = Path("./output_ninapro_rotation")

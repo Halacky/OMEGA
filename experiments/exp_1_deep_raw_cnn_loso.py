@@ -209,16 +209,24 @@ def run_single_loso_fold(
 
 def main():
     # ==== Параметры эксперимента (ВСЁ внутри файла) ====
-    EXPERIMENT_NAME = "exp1_deep_raw_tcn_loso_isolated_v2"
+    EXPERIMENT_NAME = "exp_1_deep_raw_cnn_gru_attention_loso"
     BASE_DIR = ROOT / "data"
-    OUTPUT_DIR = Path(f"./experiments_output/{EXPERIMENT_NAME}")
+    OUTPUT_DIR = Path(f"./experiments_output/{EXPERIMENT_NAME}_1_12_15_28_39")
 
     # Все субъекты из DB2
     ALL_SUBJECTS = [
-        "DB2_s1", "DB2_s2", "DB2_s3", "DB2_s4", "DB2_s5",
-        "DB2_s11", "DB2_s12", "DB2_s13", "DB2_s14", "DB2_s15",
-        "DB2_s26", "DB2_s27", "DB2_s28", "DB2_s29", "DB2_s30",
-        "DB2_s36", "DB2_s37", "DB2_s38", "DB2_s39", "DB2_s40",
+        "DB2_s1", 
+        # #"DB2_s2", "DB2_s3", "DB2_s4", "DB2_s5",
+        # "DB2_s11", 
+        "DB2_s12", 
+        # "DB2_s13", "DB2_s14", 
+        "DB2_s15",
+        # "DB2_s26", "DB2_s27", 
+        "DB2_s28", 
+        # "DB2_s29", "DB2_s30",
+        # "DB2_s36", "DB2_s37", "DB2_s38", 
+        "DB2_s39", 
+        # "DB2_s40",
     ]
 
 
@@ -228,16 +236,16 @@ def main():
 
     # список архитектур, которые хотим протестировать
     MODEL_TYPES = [
-        "simple_cnn",
-        "attention_cnn", 
-        "tcn", 
-        "tcn_attn", 
-        "multiscale_cnn",
-        "bilstm", 
-        "bilstm_attention", 
+        # "simple_cnn",
+        # "attention_cnn", 
+        # "tcn", 
+        # "tcn_attn", 
+        # "multiscale_cnn",
+        # "bilstm", 
+        # "bilstm_attention", 
         "bigru", 
-        "cnn_lstm", 
-        "cnn_gru_attention"
+        # "cnn_lstm", 
+        # "cnn_gru_attention"
     ]
 
     proc_cfg = ProcessingConfig(

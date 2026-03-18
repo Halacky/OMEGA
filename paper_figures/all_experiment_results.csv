@@ -1,0 +1,481 @@
+experiment,model,model_clean,category,subject,accuracy,f1_macro
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s38,0.3221476510067114,0.2838967739345821
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s5,0.3019654556283502,0.282522086582821
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s30,0.4851425106124924,0.4740053306054411
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s11,0.3744047619047619,0.3372683926423906
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s36,0.3594132029339853,0.34694573318341976
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s1,0.39179548156956007,0.3410138784766003
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s26,0.3070769230769231,0.2694894027786167
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s3,0.2537313432835821,0.21791356367039558
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s29,0.2192448233861145,0.1790875028948176
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s14,0.39928698752228164,0.38167842103870325
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s37,0.15365703749231716,0.0899126167910197
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s4,0.4088200238379023,0.37123913775121786
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s13,0.36168947055324213,0.3268195763887033
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s15,0.2494047619047619,0.22975091005617893
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s2,0.35518474374255066,0.3026332296662545
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s27,0.3684531059683313,0.367864166985988
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s28,0.47863247863247865,0.43265389592646847
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s39,0.3548780487804878,0.3503575131105837
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s40,0.355786895284752,0.334311679997335
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,DB2_s12,0.32996432818073723,0.3087931210042835
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s38,0.3825503355704698,0.371524327884794
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s5,0.3067301965455628,0.29813626217820755
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s30,0.49181322013341416,0.4804393514485474
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s11,0.3601190476190476,0.3471930160117376
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s36,0.4058679706601467,0.373384729887997
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s1,0.4167657550535077,0.39113151034713695
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s26,0.2929230769230769,0.28796726633372616
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s3,0.2298507462686567,0.23069574949945562
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s29,0.2850182704019488,0.22688396325695956
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s14,0.32917409387997626,0.31084259231511474
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s37,0.15673017824216348,0.10241086058096141
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s4,0.3420738974970203,0.3230604316035192
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s13,0.4003569303985723,0.3829390882716201
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s15,0.2648809523809524,0.26046549624181703
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s2,0.3635280095351609,0.31583728797318394
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s27,0.37210718635809986,0.35622601564124273
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s28,0.44505494505494503,0.41445125333965704
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s39,0.3170731707317073,0.30906215340184895
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s40,0.3625229638701776,0.3420487836973859
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,DB2_s12,0.27824019024970276,0.2647530592297741
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s38,0.09945088468578402,0.029390409319396793
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s5,0.14770696843359143,0.07571276795296014
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s30,0.20557913887204365,0.11135043471123893
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s11,0.3404761904761905,0.31187526797695203
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s36,0.37713936430317846,0.34841541426763434
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s1,0.17419738406658739,0.09932799187827683
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s26,0.2633846153846154,0.25052278250954
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s3,0.24417910447761193,0.2491447413151502
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s29,0.14981729598051158,0.05236196441370607
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s14,0.09982174688057041,0.01815235008103728
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s37,0.09096496619545175,0.046833385565413034
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s4,0.3098927294398093,0.29103415814573286
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s13,0.19928613920285546,0.11056022610112053
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s15,0.12916666666666668,0.09988963423991205
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s2,0.10011918951132301,0.01820151679306609
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s27,0.27344701583434833,0.2256478439238657
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s28,0.4426129426129426,0.4174961650820741
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s39,0.22378048780487805,0.12877852766447795
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s40,0.3129210042865891,0.2907999458554064
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,DB2_s12,0.09988109393579073,0.01816216216216216
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s38,0.3685173886516168,0.339130206373018
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s5,0.307921381774866,0.28302993084143463
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s30,0.501516070345664,0.4756492097057506
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s11,0.4154761904761905,0.3857355683635701
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s36,0.42665036674816625,0.42238072525538417
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s1,0.4161712247324614,0.38342307292047684
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s26,0.32246153846153847,0.30709386356018387
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s3,0.22925373134328358,0.20014085606255233
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s29,0.30755176613885504,0.27756641429167783
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s14,0.36541889483065954,0.3467942618943876
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s37,0.1684081130915796,0.11239957574451079
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s4,0.3933253873659118,0.39473143938983807
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s13,0.3985722784057109,0.3753738176927123
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s15,0.2851190476190476,0.28517036450895594
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s2,0.30929678188319426,0.260992973626754
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s27,0.4415347137637028,0.44436571423715066
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s28,0.4627594627594628,0.4498566571525099
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s39,0.35365853658536583,0.3351512826250676
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s40,0.3508879363135334,0.3185499974691729
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,DB2_s12,0.28240190249702735,0.2888950837876635
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s38,0.3685173886516168,0.3433823801702372
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s5,0.38832638475282905,0.3865015197388262
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s30,0.5366889023650697,0.5173134913561895
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s11,0.3904761904761905,0.3558344099677318
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s36,0.42603911980440096,0.42028320997453905
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s1,0.40665873959571935,0.36477094277339234
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s26,0.2923076923076923,0.27620980049365895
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s3,0.2262686567164179,0.20071073899235858
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s29,0.2801461632155907,0.26744933536181587
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s14,0.32382650029708854,0.29814884621993165
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s37,0.1505838967424708,0.08975602662424813
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s4,0.4058402860548272,0.3717945053720776
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s13,0.3682331945270672,0.3453621562014283
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s15,0.3244047619047619,0.299351007980185
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s2,0.3396901072705602,0.28453726726398904
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s27,0.4573690621193666,0.44817708224981
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s28,0.43101343101343104,0.3499055411862975
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s39,0.3908536585365854,0.3880198668019033
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s40,0.3900796080832823,0.36604946161644747
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,DB2_s12,0.28953626634958385,0.29073148909751295
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s38,0.10006101281269067,0.018191902384914034
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s5,0.3097081596188207,0.2721997388601687
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s30,0.46634323832625835,0.4153715210860535
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s11,0.3744047619047619,0.37129459785676583
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s36,0.4180929095354523,0.40473096640636497
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s1,0.3573127229488704,0.34913454628441387
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s26,0.1003076923076923,0.018232662192393737
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s3,0.10029850746268656,0.018231144872490505
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s29,0.26370280146163216,0.23602364729094844
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s14,0.3790849673202614,0.32925759040538577
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s37,0.1530424093423479,0.0955312904007054
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s4,0.29499404052443384,0.2842745763632052
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s13,0.10053539559785842,0.01827027027027027
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s15,0.1,0.01818181818181818
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s2,0.30214541120381405,0.256801237810267
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s27,0.09987819732034105,0.01816168327796235
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s28,0.4627594627594628,0.4321154455679772
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s39,0.10060975609756098,0.018282548476454295
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s40,0.3288426209430496,0.3036201309902789
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,DB2_s12,0.28834720570749106,0.27334965293928026
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s38,0.26601586333129956,0.21304961793861862
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s5,0.258487194758785,0.22305332286690221
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s30,0.4329896907216495,0.3944520822135903
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s11,0.30297619047619045,0.265374707937278
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s36,0.2591687041564792,0.21078014055755778
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s1,0.3513674197384067,0.29020289971339686
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s26,0.18892307692307692,0.18776295227024278
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s3,0.16059701492537312,0.14096903514911793
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s29,0.22533495736906212,0.176490535209835
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s14,0.27213309566250743,0.24860714415965993
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s37,0.08051628764597418,0.0638725214592037
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s4,0.2908224076281287,0.2238915692177203
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s13,0.3402736466389054,0.31910319972718637
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s15,0.25416666666666665,0.23064281404130543
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s2,0.2860548271752086,0.22674888124405873
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s27,0.256394640682095,0.23504063719287882
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s28,0.336996336996337,0.31050648721931035
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s39,0.30060975609756097,0.26361131699352897
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s40,0.25229638701775875,0.21086395328270524
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,DB2_s12,0.23305588585017836,0.18293684010171668
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s38,0.3587553386211104,0.34967895495925094
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s5,0.36450268016676596,0.3608005161305265
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s30,0.47786537295330506,0.45027915320251033
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s11,0.3625,0.3370827516754479
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s36,0.40403422982885084,0.3848959643684789
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s1,0.41914387633769323,0.3859351391109852
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s26,0.3150769230769231,0.3124727703525544
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s3,0.26746268656716415,0.2716001119644106
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s29,0.3276492082825822,0.29212572522261177
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s14,0.35353535353535354,0.32835819630257157
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s37,0.15365703749231716,0.10220052218322204
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s4,0.35101311084624554,0.3321610931581031
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s13,0.4283164782867341,0.41035844256336185
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s15,0.2898809523809524,0.27743575027438644
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s2,0.3039332538736591,0.261345473801852
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s27,0.4123020706455542,0.40066251693810495
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s28,0.5115995115995116,0.48657331633613116
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s39,0.3567073170731707,0.33480848972388266
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s40,0.37048377219840783,0.320067783561705
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,DB2_s12,0.30439952437574314,0.2998608199124515
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s38,0.411836485661989,0.4066943052617226
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s5,0.3001786777843955,0.29317252511032754
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s30,0.5239539114614918,0.5004741908607893
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s11,0.4125,0.39257834587389995
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s36,0.39792176039119803,0.3867298126602109
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s1,0.415576694411415,0.39389390592772344
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s26,0.26153846153846155,0.26535126186243996
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s3,0.1964179104477612,0.20322384060652698
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s29,0.2862362971985384,0.25420408012613305
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s14,0.37373737373737376,0.35791391414988694
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s37,0.16103257529194837,0.1071238815441214
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s4,0.35518474374255066,0.35697947619097264
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s13,0.3914336704342653,0.36472980633798063
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s15,0.2773809523809524,0.2783492039665333
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s2,0.29856972586412395,0.2555907229709922
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s27,0.43605359317904996,0.4254911473128309
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s28,0.45604395604395603,0.43151460388968677
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s39,0.348780487804878,0.3436807556855262
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s40,0.3429271279853031,0.31579455122744954
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,DB2_s12,0.31153388822829964,0.2882378573393901
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s38,0.3282489322757779,0.3040338843645544
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s5,0.2519356759976176,0.2002770764708119
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s30,0.36810187992722865,0.3112599027405817
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s11,0.2791666666666667,0.25644885962147956
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s36,0.34596577017114916,0.32493508220349254
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s1,0.2479191438763377,0.2056901457590321
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s26,0.2449230769230769,0.23014823087558925
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s3,0.23402985074626867,0.20021719061588422
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s29,0.22959805115712545,0.20137879519853757
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s14,0.2133095662507427,0.19204383350666848
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s37,0.18438844499078058,0.14205676760526242
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s4,0.36114421930870083,0.342453987980409
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s13,0.26174895895300415,0.27026167397037276
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s15,0.2732142857142857,0.24535939823715341
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s2,0.22884386174016685,0.17057796279784637
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s27,0.31425091352009743,0.28199505685253967
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s28,0.36507936507936506,0.3459087897921823
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s39,0.23536585365853657,0.19220385927839576
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s40,0.288426209430496,0.28069960839833297
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s12,0.25980975029726516,0.23922590049837136
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s38,0.33984136668700426,0.32539750651228877
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s5,0.32459797498511017,0.3051907065089413
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s30,0.44451182534869615,0.42152004414184396
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s11,0.4452380952380952,0.4395571018082638
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s36,0.3991442542787286,0.3943725092295899
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s1,0.3323424494649227,0.27422464817979453
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s26,0.3150769230769231,0.28658717389046984
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s3,0.2853731343283582,0.270718877938145
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s29,0.25334957369062117,0.21114778758897917
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s14,0.26262626262626265,0.25265222658063985
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s37,0.14812538414259374,0.10345092796790814
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s4,0.37842669845053634,0.3590235355931346
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s13,0.3176680547293278,0.28633509177873673
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s15,0.2898809523809524,0.28879965828696513
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s2,0.31168057210965433,0.2809378659121756
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s27,0.3934226552984166,0.38615330713644513
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s28,0.4126984126984127,0.4094929028442385
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s39,0.2573170731707317,0.24856808483726525
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s40,0.34109001837109615,0.3226262601310712
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,DB2_s12,0.28834720570749106,0.27336765382533346
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s38,0.31421598535692497,0.30030777718472706
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s5,0.32638475282906493,0.313913698186035
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s30,0.40024257125530627,0.38543745475341273
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s11,0.39107142857142857,0.39405819400279735
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s36,0.3643031784841076,0.37077295989901293
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s1,0.2859690844233056,0.25944924756009374
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s26,0.25846153846153846,0.24825226314498017
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s3,0.2573134328358209,0.25749530804874554
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s29,0.2551766138855055,0.21885946236506038
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s14,0.31016042780748665,0.291478163063873
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s37,0.13706207744314688,0.09783885919485771
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s4,0.3700834326579261,0.3624036918091343
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s13,0.3135038667459845,0.2857261790520754
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s15,0.2505952380952381,0.24202307670260956
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s2,0.3176400476758045,0.3002578055269275
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s27,0.3751522533495737,0.36420388741540793
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s28,0.3778998778998779,0.3603333537399883
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s39,0.27134146341463417,0.26766440557775256
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s40,0.3312921004286589,0.32025072746049604
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,DB2_s12,0.2550535077288942,0.24215767513199166
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s38,0.3062843197071385,0.2948547080506297
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s5,0.28945801072066707,0.28103750147449635
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s30,0.38204972710733776,0.3729728385096534
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s11,0.3601190476190476,0.3692512441300491
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s36,0.37224938875305624,0.37294222942285965
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s1,0.28953626634958385,0.24517556789091888
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s26,0.2775384615384615,0.2632208015088213
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s3,0.24477611940298508,0.23492682133141743
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s29,0.25943970767356883,0.21385409018407434
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s14,0.27748068924539515,0.2688374451922858
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s37,0.14259373079287033,0.11213175415284977
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s4,0.3742550655542312,0.3476344276636799
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s13,0.2992266508030934,0.283100501181757
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s15,0.28273809523809523,0.28053605734861936
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s2,0.33492252681764006,0.30139489576472683
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s27,0.38246041412911086,0.3775656757603375
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s28,0.4053724053724054,0.397109479516189
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s39,0.24695121951219512,0.23532710854870736
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s40,0.32700551132884265,0.317581472017313
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,DB2_s12,0.27764565992865636,0.2696218042712214
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s38,0.2940817571690055,0.29624358678189416
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s5,0.3287671232876712,0.31955886183020626
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s30,0.37355973317161917,0.34621008640707196
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s11,0.3541666666666667,0.3301217302740493
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s36,0.3105134474327628,0.31689758174771915
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s1,0.27705112960760997,0.21355726830797384
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s26,0.26276923076923075,0.2407810345045474
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s3,0.2519402985074627,0.2424062169713476
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s29,0.2582216808769793,0.2081481738429416
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s14,0.2709447415329768,0.24553003099677856
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s37,0.17455439459127228,0.11080531644468443
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s4,0.28903456495828367,0.23403197790497932
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s13,0.26531826293872696,0.25123649682555815
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s15,0.28809523809523807,0.2641980183131818
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s2,0.28545887961859356,0.2224203883454386
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s27,0.3909866017052375,0.3737241375764787
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s28,0.3601953601953602,0.33242392232225576
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s39,0.26402439024390245,0.23740165435218846
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s40,0.33496631965707285,0.2979467231513575
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,DB2_s12,0.24910820451843044,0.23578900645652318
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s38,0.21964612568639413,0.21038873073429148
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s5,0.32459797498511017,0.29382963600226564
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s30,0.39963614311704065,0.3525908775768657
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s11,0.36607142857142855,0.33246992326748637
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s36,0.3545232273838631,0.3576264568502042
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s1,0.28299643281807374,0.21186129146929722
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s26,0.21907692307692309,0.23078105003795515
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s3,0.2555223880597015,0.2519361874404199
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s29,0.28197320341047505,0.24664725577145688
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s14,0.25074272133095665,0.24174276813625953
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s37,0.20405654578979718,0.17760465991361485
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s4,0.2908224076281287,0.28803123322758095
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s13,0.25044616299821537,0.19762061742701847
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s15,0.2910714285714286,0.28853212796869065
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s2,0.3110846245530393,0.27467479375699905
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s27,0.3392204628501827,0.33200573380748516
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s28,0.36324786324786323,0.35868281153688886
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s39,0.3079268292682927,0.28784469686540587
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s40,0.35884874464176364,0.3474610366880183
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,DB2_s12,0.28894173602853745,0.302884530555921
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s38,0.3007931665649786,0.3027705397991002
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s5,0.2823108993448481,0.26373172026730873
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s30,0.38144329896907214,0.33746686604402276
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s11,0.28214285714285714,0.2575540740366778
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s36,0.3025672371638142,0.3099112748274709
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s1,0.2746730083234245,0.23495320519633972
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s26,0.23384615384615384,0.20056088093826457
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s3,0.2525373134328358,0.24550422782006304
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s29,0.22107186358099878,0.210128744901137
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s14,0.2905525846702317,0.27339925312485314
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s37,0.15119852489244007,0.11583245784090321
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s4,0.33849821215733017,0.3256348711338066
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s13,0.29327781082688875,0.26129190798697205
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s15,0.21845238095238095,0.20213733054175295
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s2,0.30572109654350416,0.2800357017920572
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s27,0.36601705237515225,0.3520681843156278
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s28,0.3791208791208791,0.3691587968986173
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s39,0.21951219512195122,0.175947349852895
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s40,0.3012859767299449,0.2649710798648642
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,DB2_s12,0.26932223543400713,0.24491355158079825
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s38,0.225137278828554,0.22244463022869923
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s5,0.2882668254913639,0.27467224756586345
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s30,0.3559733171619163,0.3350419694369362
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s11,0.3386904761904762,0.3201434839622702
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s36,0.31723716381418093,0.31710778736600476
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s1,0.25921521997621877,0.23693961948349845
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s26,0.30153846153846153,0.24933043695221388
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s3,0.2638805970149254,0.27095001388739676
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s29,0.22350791717417784,0.16683047901760434
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s14,0.26737967914438504,0.2532915449336258
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s37,0.14013521819299324,0.09184552908649143
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s4,0.2902264600715137,0.24481174825868468
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s13,0.2819750148720999,0.27510014682340045
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s15,0.21845238095238095,0.1859054849468435
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s2,0.3176400476758045,0.27510576322413366
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s27,0.37880633373934225,0.3411709539779463
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s28,0.2905982905982906,0.26267350434427755
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s39,0.2524390243902439,0.23966850019270242
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s40,0.29822412737293325,0.29739329294003525
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,DB2_s12,0.2788347205707491,0.2607773398552372
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s38,0.28004881025015255,0.2851536390404605
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s5,0.32042882668254913,0.3005527404369117
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s30,0.40873256519102485,0.384603367208091
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s11,0.4232142857142857,0.4213792077945577
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s36,0.36735941320293397,0.37467281378660433
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s1,0.31747919143876335,0.28065058587430874
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s26,0.28,0.26620229636258824
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s3,0.22208955223880597,0.22180880709719936
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s29,0.23020706455542023,0.1990059960204564
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s14,0.3184789067142008,0.28074936404983375
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s37,0.15918869084204057,0.1365902165259301
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s4,0.3742550655542312,0.35599938111258556
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s13,0.31647828673408684,0.28096094937687754
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s15,0.2976190476190476,0.27621084767100135
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s2,0.3230035756853397,0.2989567077417716
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s27,0.3909866017052375,0.3826000026964475
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s28,0.40354090354090355,0.40139813304681304
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s39,0.31402439024390244,0.3026358584758281
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s40,0.3429271279853031,0.30451777442060063
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,DB2_s12,0.29369797859690844,0.2767597940557701
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s38,0.25015253203172666,0.23027505418672778
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s5,0.35080405002977966,0.3329454458621077
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s30,0.3602183141297756,0.32407099870282136
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s11,0.29642857142857143,0.24575631428539135
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s36,0.3025672371638142,0.27239807559222573
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s1,0.3388822829964328,0.28638437448209786
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s26,0.22953846153846155,0.20912363344248508
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s3,0.24597014925373134,0.19212535794596913
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s29,0.23325213154689403,0.2076034680399424
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s14,0.24717765894236482,0.23284722599994684
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s37,0.1800860479409957,0.1581546166677619
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s4,0.29499404052443384,0.2836041922368405
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s13,0.3194527067221892,0.24856198206055904
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s15,0.2577380952380952,0.2528141543042478
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s2,0.29558998808104886,0.2766209646052221
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s27,0.3337393422655298,0.3029339470418479
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s28,0.31746031746031744,0.28735318797993037
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s39,0.19451219512195123,0.14270053888316764
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s40,0.3000612369871402,0.28348310714086494
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,DB2_s12,0.2140309155766944,0.21661920448012303
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s38,0.3361805979255644,0.3304621464698955
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s5,0.2465753424657534,0.22078037169701603
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s30,0.45482110369921164,0.4240893633500457
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s11,0.3488095238095238,0.33298174895093213
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s36,0.3380195599022005,0.31661204602298787
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s1,0.361474435196195,0.3208660295435469
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s26,0.29046153846153844,0.28295481099803677
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s3,0.23044776119402985,0.21942256398107504
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s29,0.31912302070645554,0.28218421757437884
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s14,0.3969102792632204,0.3830603248031338
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s37,0.1505838967424708,0.1351575594550129
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s4,0.4201430274135876,0.39787872997454515
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s13,0.3967876264128495,0.3693395845297126
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s15,0.2892857142857143,0.2656496669267302
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s2,0.366507747318236,0.35026188939105274
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s27,0.4397076735688185,0.4126401353578461
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s28,0.3724053724053724,0.3751498627649959
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s39,0.3146341463414634,0.27101900620178565
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s40,0.387630128597673,0.34589871326149885
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,DB2_s12,0.3038049940546968,0.2772766134790506
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s38,0.40329469188529593,0.37047675441255407
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s5,0.35914234663490174,0.3592520750563616
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s30,0.4572468162522741,0.41695305396187543
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s11,0.4976190476190476,0.4834988733559634
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s36,0.4621026894865526,0.4428877806856023
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s1,0.35374554102259215,0.29760775493534125
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s26,0.35384615384615387,0.346687567461266
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s3,0.19044776119402984,0.16723074079750372
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s29,0.24786845310596833,0.21297569449295692
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s14,0.3256090314913844,0.3000613541389045
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s37,0.1290719114935464,0.07254965715203526
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s4,0.40047675804529204,0.3718489613948897
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s13,0.30993456276026177,0.2756766927714764
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s15,0.30654761904761907,0.31330876469505065
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s2,0.37246722288438616,0.32559527114006315
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s27,0.43118148599269185,0.4079693475238325
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s28,0.3968253968253968,0.36647658614970424
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s39,0.38109756097560976,0.3558509489102128
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s40,0.352112676056338,0.31202087487443053
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,DB2_s12,0.316884661117717,0.30118333283285603
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s38,0.3410616229408176,0.33519694503383946
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s5,0.3019654556283502,0.28775853975558463
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s30,0.4536082474226804,0.4321169249062643
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s11,0.4511904761904762,0.43891795943834017
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s36,0.36674816625916873,0.3706556659795738
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s1,0.3906064209274673,0.34861858530288536
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s26,0.28615384615384615,0.27879991462091214
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s3,0.231044776119403,0.2311953818253592
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s29,0.2965895249695493,0.25736829787864834
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s14,0.3452168746286393,0.3328703873439643
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s37,0.17086662569145666,0.11588448597487108
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s4,0.4058402860548272,0.38993508116547254
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s13,0.3319452706722189,0.3086560321284879
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s15,0.30714285714285716,0.2972639558168139
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s2,0.35816448152562574,0.30655787483971214
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s27,0.4482338611449452,0.4403072480709899
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s28,0.39316239316239315,0.39029489739342355
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s39,0.32439024390243903,0.3082561528994334
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s40,0.38211879975505203,0.3528891600109158
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,DB2_s12,0.3055885850178359,0.2971903905390726
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s38,0.3087248322147651,0.3007098582062218
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s5,0.35020845741512807,0.33633842083844756
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s30,0.4008489993935719,0.3761382306843505
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s11,0.4297619047619048,0.4217876523507843
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s36,0.3899755501222494,0.3840956821886237
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s1,0.2972651605231867,0.26806168079706183
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s26,0.28184615384615386,0.2726248444574797
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s3,0.208955223880597,0.20688743535250248
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s29,0.24908647990255786,0.20452411363111694
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s14,0.3315508021390374,0.32285695728777447
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s37,0.1604179471419791,0.12030679960354444
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s4,0.3420738974970203,0.3265062501125721
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s13,0.32004759071980965,0.2879718376508169
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s15,0.29642857142857143,0.29226114532867264
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s2,0.3635280095351609,0.3283205737006931
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s27,0.3447015834348356,0.34762161507889333
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s28,0.39377289377289376,0.3834599143897752
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s39,0.30609756097560975,0.29287626150583446
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s40,0.33496631965707285,0.3145160805952918
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,DB2_s12,0.28834720570749106,0.2770959375786864
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s38,0.35936546674801706,0.3559610690137315
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s5,0.27695056581298394,0.26070310668328767
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s30,0.4523953911461492,0.38714833505171137
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s11,0.3982142857142857,0.37668865531372003
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s36,0.363080684596577,0.35454343992900406
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s1,0.3507728894173603,0.29886440069391923
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s26,0.24,0.24460638031795315
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s3,0.22686567164179106,0.2333928688029891
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s29,0.32521315468940315,0.28000935149211215
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s14,0.34165181224004754,0.32793979939119755
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s37,0.18438844499078058,0.13169579273503368
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s4,0.39690107270560193,0.35592251245673173
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s13,0.388459250446163,0.35988579298323065
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s15,0.28273809523809523,0.2624289695800025
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s2,0.3259833134684148,0.30303124874450454
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s27,0.464068209500609,0.44506797497892503
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s28,0.40415140415140416,0.4030136332726582
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s39,0.33902439024390246,0.32570592582232766
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s40,0.36007348438456827,0.33186057675228486
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,DB2_s12,0.3038049940546968,0.3007220830302621

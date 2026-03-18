@@ -1,0 +1,141 @@
+\begin{figure}[t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[
+    >=Stealth,
+    node distance=0.45cm and 0.55cm,
+    font=\sffamily\scriptsize,
+    inputbox/.style={
+        rectangle, rounded corners=2pt, draw=black!70, fill=gray!12,
+        minimum height=0.7cm, minimum width=1.1cm, align=center,
+        line width=0.4pt
+    },
+    decompbox/.style={
+        rectangle, rounded corners=2pt, draw=blue!70!black, fill=blue!12,
+        minimum height=0.7cm, minimum width=1.3cm, align=center,
+        line width=0.4pt
+    },
+    mixbox/.style={
+        rectangle, rounded corners=2pt, draw=orange!80!black, fill=orange!12,
+        minimum height=0.5cm, minimum width=0.9cm, align=center,
+        line width=0.4pt
+    },
+    encbox/.style={
+        rectangle, rounded corners=2pt, draw=green!60!black, fill=green!10,
+        minimum height=0.5cm, minimum width=1.1cm, align=center,
+        line width=0.4pt
+    },
+    classbox/.style={
+        rectangle, rounded corners=2pt, draw=red!70!black, fill=red!10,
+        minimum height=0.7cm, minimum width=1.0cm, align=center,
+        line width=0.4pt
+    },
+    concatbox/.style={
+        rectangle, rounded corners=2pt, draw=black!60, fill=yellow!8,
+        minimum height=0.7cm, minimum width=0.7cm, align=center,
+        line width=0.4pt
+    },
+    arrstyle/.style={->, line width=0.4pt, black!70},
+    dimlabel/.style={font=\sffamily\tiny, text=black!60},
+]
+
+% ---- Input ----
+\node[inputbox] (input) {Input\\$\mathbf{X}$};
+\node[dimlabel, below=0.08cm of input] {$400{\times}12$};
+
+% ---- Decomposition ----
+\node[decompbox, right=0.7cm of input] (decomp) {Sinc / \textsc{uvmd}\\$K{=}4$ bands};
+
+\draw[arrstyle] (input) -- (decomp);
+
+% ---- Sub-band fan-out: 4 parallel paths ----
+\foreach \i/\lab in {1/$X_1$, 2/$X_2$, 3/$X_3$, 4/$X_4$} {
+    \pgfmathsetmacro{\yoff}{(2.5 - \i) * 0.72}
+    \node[dimlabel, right=0.55cm of decomp, yshift=\yoff cm] (sb\i) {\lab};
+}
+
+% Arrows from decomp to sub-band labels
+\foreach \i in {1,2,3,4} {
+    \draw[arrstyle] (decomp.east) -- (sb\i.west);
+}
+
+% ---- MixStyle blocks ----
+\foreach \i in {1,2,3,4} {
+    \node[mixbox, right=0.25cm of sb\i] (mix\i) {\textsc{Mix}\\Style};
+}
+
+\foreach \i in {1,2,3,4} {
+    \draw[arrstyle] (sb\i) -- (mix\i);
+}
+
+% ---- Dashed "training only" box around MixStyle ----
+\begin{scope}[on background layer]
+    \node[draw=orange!70!black, dashed, rounded corners=3pt, line width=0.5pt,
+          inner sep=3pt, fit=(mix1)(mix4),
+          label={[font=\sffamily\tiny, text=orange!70!black]below:training only}] (mixfit) {};
+\end{scope}
+
+% ---- Per-band CNN encoders ----
+\foreach \i in {1,2,3,4} {
+    \node[encbox, right=0.35cm of mix\i] (enc\i) {CNN\\Encoder};
+}
+
+\foreach \i in {1,2,3,4} {
+    \draw[arrstyle] (mix\i) -- (enc\i);
+}
+
+% z_k labels
+\foreach \i in {1,2,3,4} {
+    \node[dimlabel, above=0.01cm of enc\i, font=\sffamily\tiny] {$\mathbf{z}_\i$};
+}
+
+% ---- Concat node ----
+\coordinate (encmid) at ($(enc2.east)!0.5!(enc3.east)$);
+\node[concatbox, right=0.65cm of encmid] (concat) {$\oplus$};
+
+\foreach \i in {1,2,3,4} {
+    \draw[arrstyle] (enc\i.east) -- (concat.west);
+}
+
+\node[dimlabel, below=0.08cm of concat] {$\mathbf{z}{\in}\mathbb{R}^{512}$};
+
+% ---- Classifier ----
+\node[classbox, right=0.55cm of concat] (cls) {MLP\\$512{\to}256{\to}10$};
+\draw[arrstyle] (concat) -- (cls);
+
+% Output
+\node[dimlabel, right=0.3cm of cls] (out) {$\hat{y}$};
+\draw[arrstyle] (cls) -- (out);
+
+% ---- Encoder detail annotation ----
+\node[font=\sffamily\tiny, text=green!50!black, below=0.35cm of enc4,
+      align=center, anchor=north]
+      {Conv64--BN--ReLU\\Conv128--BN--ReLU\\AvgPool $\to$ $\mathbb{R}^{128}$};
+
+% ---- Stage labels (top) ----
+\node[font=\sffamily\tiny\bfseries, text=gray!70, above=0.45cm of decomp] {Stage 1};
+\node[font=\sffamily\tiny\bfseries, text=gray!70, above=0.45cm of mixfit] {Stage 2};
+\node[font=\sffamily\tiny\bfseries, text=gray!70, above=0.45cm of enc1] {Stage 3};
+\node[font=\sffamily\tiny\bfseries, text=gray!70, above=0.45cm of cls] {Stage 4};
+
+\end{tikzpicture}%
+}% end resizebox
+\iflanguage{russian}{%
+\caption{Архитектура предлагаемого частотно-ориентированного конвейера.
+Этап~1: декомпозиция входного сигнала на $K{=}4$ частотных поддиапазона (Sinc или \textsc{uvmd}).
+Этап~2: побандовый \textsc{MixStyle} (только при обучении; ноль параметров) смешивает статистики между субъектами.
+Этап~3: независимое кодирование каждого поддиапазона CNN-энкодером ($\mathbf{z}_k \in \mathbb{R}^{128}$).
+Этап~4: классификация конкатенированного представления $\mathbf{z} \in \mathbb{R}^{512}$ MLP-головой.}%
+}{%
+\caption{Architecture of the proposed frequency-aware sEMG pipeline.
+Stage~1 decomposes the raw input into $K{=}4$ frequency sub-bands via either
+a fixed Sinc filterbank or learnable \textsc{uvmd}.
+Stage~2 applies per-band \textsc{MixStyle} (training only; zero parameters) to
+mix channel-wise statistics between subjects.
+Stage~3 encodes each sub-band independently through shared-architecture CNN
+encoders, producing $\mathbf{z}_k \in \mathbb{R}^{128}$.
+The concatenated representation $\mathbf{z} \in \mathbb{R}^{512}$ is classified
+by an MLP head (Stage~4).}%
+}
+\label{fig:architecture}
+\end{figure}

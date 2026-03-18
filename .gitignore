@@ -1,22 +1,81 @@
-# Project output directories
+# ============================================================
+# OMEGA Project .gitignore
+# ============================================================
+
+# ----- Data (NinaPro DB2 subject directories) -----
+data/DB2_*/
+data/papers_for_research/
+
+# ----- Experiment outputs & results (large, reproducible) ---
+experiments_output/
+results/
+results_collected/
+output/
+output_model_comparison/
+output_model_comparison_improved_000/
 output_ninapro_rotation/
-27_10/
-30_10/
 
-# Data directories
-data/DB2_s1/
+# ----- Virtual environments -----
+agents_env/
+omega_env/
+.venv/
+venv/
+env/
+ENV/
 
-# Python cache files
+# ----- Python cache -----
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Byte-compiled / optimized / DLL files
 *.pyc
 *.pyo
 *.pyd
 
-# Distribution / packaging
+# ----- Environment files (secrets) -----
+.env
+.env.*
+
+# ----- IDE & editor -----
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*~
+
+# ----- OS artifacts -----
+.DS_Store
+Thumbs.db
+
+# ----- LaTeX build artifacts -----
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/main_tmp.*
+
+# ----- Logs -----
+*.log
+logs/
+
+# ----- Temporary / debug files -----
+*.tmp
+*.temp
+llm_api_test_results.json
+
+# ----- Cursor proxy (debug) -----
+.cursor_proxy.sh
+.cursor_proxy_commands
+
+# ----- Archives -----
+27_10/
+30_10/
+
+# ----- Distribution / packaging -----
 .Python
 build/
 develop-eggs/
@@ -34,15 +93,7 @@ wheels/
 .installed.cfg
 *.egg
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+# ----- Testing -----
 htmlcov/
 .tox/
 .nox/
@@ -55,39 +106,19 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Jupyter Notebook
+# ----- Jupyter -----
 .ipynb_checkpoints
-
-# IPython
 profile_default/
 ipython_config.py
 
-# pyenv
+# ----- Misc -----
 .python-version
+pip-log.txt
+pip-delete-this-directory.txt
+*.manifest
+*.spec
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
+# ----- Qdrant vector DB data -----
+research_agent/qdrant_data/
+hypothesis_executor/hypotheses_batch/
+hypothesis_executor/last_*.json

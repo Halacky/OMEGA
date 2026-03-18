@@ -1,0 +1,30 @@
+\begin{tabular}{lllrrrrr}
+\toprule
+model_short & model_full & features & mean_acc & std_acc & mean_f1 & std_f1 & n_subjects \\
+\midrule
+Simple Cnn & Simple Cnn & Raw EMG & 0.359 & 0.085 & 0.333 & 0.091 & 20 \\
+Bigru & Bigru & Raw EMG & 0.357 & 0.078 & 0.335 & 0.080 & 20 \\
+Multiscale Cnn & Multiscale Cnn & Raw EMG & 0.355 & 0.081 & 0.334 & 0.088 & 20 \\
+Cnn Gru Attention & Cnn Gru Attention & Raw EMG & 0.348 & 0.088 & 0.331 & 0.091 & 20 \\
+Attention Cnn & Attention Cnn & Raw EMG & 0.342 & 0.080 & 0.311 & 0.087 & 20 \\
+Bilstm Attention & Bilstm Attention & Raw EMG & 0.340 & 0.078 & 0.319 & 0.081 & 20 \\
+Tcn & Tcn & Raw EMG & 0.267 & 0.074 & 0.231 & 0.069 & 20 \\
+Tcn Attn & Tcn Attn & Raw EMG & 0.255 & 0.135 & 0.208 & 0.160 & 20 \\
+Bilstm & Bilstm & Raw EMG & 0.214 & 0.104 & 0.160 & 0.126 & 20 \\
+Svm Linear & Svm Linear & TD features & 0.352 & 0.089 & 0.325 & 0.094 & 20 \\
+Svm Rbf & Svm Rbf & TD features & 0.345 & 0.072 & 0.326 & 0.077 & 20 \\
+Hybrid Powerful Deep & Hybrid Powerful Deep & TD features & 0.339 & 0.072 & 0.317 & 0.070 & 20 \\
+Mlp Powerful & Mlp Powerful & TD features & 0.338 & 0.074 & 0.316 & 0.073 & 20 \\
+Bigru & Bigru & TD features & 0.327 & 0.072 & 0.307 & 0.080 & 20 \\
+Rf & Rf & TD features & 0.320 & 0.065 & 0.303 & 0.070 & 20 \\
+Tcn Attn & Tcn Attn & TD features & 0.319 & 0.067 & 0.302 & 0.070 & 20 \\
+Bilstm Attention & Bilstm Attention & TD features & 0.308 & 0.064 & 0.294 & 0.070 & 20 \\
+Bilstm & Bilstm & TD features & 0.307 & 0.063 & 0.292 & 0.069 & 20 \\
+Cnn Lstm & Cnn Lstm & TD features & 0.298 & 0.055 & 0.279 & 0.057 & 20 \\
+Cnn Gru Attention & Cnn Gru Attention & TD features & 0.294 & 0.051 & 0.266 & 0.061 & 20 \\
+Multiscale Cnn & Multiscale Cnn & TD features & 0.283 & 0.058 & 0.261 & 0.062 & 20 \\
+Simple Cnn & Simple Cnn & TD features & 0.279 & 0.053 & 0.256 & 0.059 & 20 \\
+Attention Cnn & Attention Cnn & TD features & 0.278 & 0.052 & 0.249 & 0.051 & 20 \\
+Attention Cnn & Attention Cnn & TD features & 0.276 & 0.054 & 0.247 & 0.059 & 20 \\
+\bottomrule
+\end{tabular}

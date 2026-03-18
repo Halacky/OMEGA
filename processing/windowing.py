@@ -1,21 +1,21 @@
-import sys
-import os
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
 import numpy as np
-import cupy as cp
+try:
+    import cupy as cp
+    _HAS_CUPY = True
+except ImportError:
+    cp = None
+    _HAS_CUPY = False
 from typing import Dict, List
 import logging
 from config.base import ProcessingConfig
 
 class WindowExtractor:
     """Extract window from signal"""
-    
+
     def __init__(self, config: ProcessingConfig, logger: logging.Logger, use_gpu: bool = True):
         self.config = config
         self.logger = logger
-        self.use_gpu = use_gpu and cp.cuda.is_available()
+        self.use_gpu = use_gpu and _HAS_CUPY and cp.cuda.is_available()
 
     def _apply_segment_edge_margin(self, segment: np.ndarray) -> np.ndarray:
         """
@@ -78,7 +78,7 @@ class WindowExtractor:
         
         if num_windows <= 0:
             self.logger.warning(f"The segment is too short ({num_samples} samples), skipping")
-            return np.array([])
+            return np.empty((0, self.config.window_size, segment.shape[1]))
         
         windows = []
         

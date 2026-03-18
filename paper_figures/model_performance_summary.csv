@@ -1,0 +1,25 @@
+experiment,model,model_clean,category,Accuracy (Mean),Accuracy (Std),N Subjects,F1 (Mean),F1 (Std)
+exp1_deep_raw_bigru_loso_isolated_v2,bigru,BiGRU,Raw CNN/LSTM,0.357,0.078,20,0.335,0.08
+exp1_deep_raw_multiscale_cnn_loso_isolated_v2,multiscale_cnn,Multiscale CNN,Raw CNN/LSTM,0.355,0.081,20,0.334,0.088
+exp1_deep_raw_simple_cnn_loso_isolated_v2,simple_cnn,Simple CNN,Raw CNN/LSTM,0.359,0.085,20,0.333,0.091
+exp1_deep_raw_cnn_gru_attention_loso_isolated_v2,cnn_gru_attention,CNN-GRU-Attn,Raw CNN/LSTM,0.348,0.088,20,0.331,0.091
+exp4_svm_rbf_powerful_loso,svm_rbf,SVM-RBF,ML Models,0.345,0.072,20,0.326,0.077
+exp4_svm_linear_powerful_loso,svm_linear,SVM-Linear,ML Models,0.352,0.089,20,0.325,0.094
+exp1_deep_raw_bilstm_attention_loso_isolated_v2,bilstm_attention,BiLSTM-Attn,Raw CNN/LSTM,0.34,0.078,20,0.319,0.081
+exp5_hybrid_powerful_deep_loso,hybrid_powerful_deep,Hybrid Powerful Deep,Hybrid,0.339,0.072,20,0.317,0.07
+exp3_deep_powerful_mlp_powerful_loso,mlp_powerful,Mlp Powerful,ML Models,0.338,0.074,20,0.316,0.073
+exp1_deep_raw_attention_cnn_loso_isolated_v2,attention_cnn,Attention CNN,Raw CNN/LSTM,0.342,0.08,20,0.311,0.087
+exp2_deep_emg_td_seq_bigru_loso,bigru,BiGRU,Feature CNN/LSTM,0.327,0.072,20,0.307,0.08
+exp4_rf_powerful_loso,rf,Random Forest,ML Models,0.32,0.065,20,0.303,0.07
+exp2_deep_emg_td_seq_tcn_attn_loso,tcn_attn,TCN-Attn,Feature CNN/LSTM,0.319,0.067,20,0.302,0.07
+exp2_deep_emg_td_seq_bilstm_attention_loso,bilstm_attention,BiLSTM-Attn,Feature CNN/LSTM,0.308,0.064,20,0.294,0.07
+exp2_deep_emg_td_seq_bilstm_loso,bilstm,BiLSTM,Feature CNN/LSTM,0.307,0.063,20,0.292,0.069
+exp2_deep_emg_td_seq_cnn_lstm_loso,cnn_lstm,CNN-LSTM,Feature CNN/LSTM,0.298,0.055,20,0.279,0.057
+exp2_deep_emg_td_seq_cnn_gru_attention_loso,cnn_gru_attention,CNN-GRU-Attn,Feature CNN/LSTM,0.294,0.051,20,0.266,0.061
+exp2_deep_emg_td_seq_multiscale_cnn_loso,multiscale_cnn,Multiscale CNN,Feature CNN/LSTM,0.283,0.058,20,0.261,0.062
+exp2_deep_emg_td_seq_simple_cnn_loso,simple_cnn,Simple CNN,Feature CNN/LSTM,0.279,0.053,20,0.256,0.059
+exp2_deep_emg_td_seq_tcn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,0.278,0.052,20,0.249,0.051
+exp2_deep_emg_td_seq_attention_cnn_loso,attention_cnn,Attention CNN,Feature CNN/LSTM,0.276,0.054,20,0.247,0.059
+exp1_deep_raw_tcn_loso_isolated_v2,tcn,TCN,Raw CNN/LSTM,0.267,0.074,20,0.231,0.069
+exp1_deep_raw_tcn_attn_loso_isolated_v2,tcn_attn,TCN-Attn,Raw CNN/LSTM,0.255,0.135,20,0.208,0.16
+exp1_deep_raw_bilstm_loso_isolated_v2,bilstm,BiLSTM,Raw CNN/LSTM,0.214,0.104,20,0.16,0.126

@@ -1,11 +1,12 @@
 import os
 import sys
 import json
+import argparse
 import traceback
 from datetime import datetime
 from pathlib import Path
 from dataclasses import asdict
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 import numpy as np
 import torch
@@ -13,6 +14,42 @@ import torch
 # добавить корень репо в sys.path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+
+
+# Default 20 subjects for full LOSO
+DEFAULT_SUBJECTS = [
+    "DB2_s1", "DB2_s2", "DB2_s3", "DB2_s4", "DB2_s5",
+    "DB2_s11", "DB2_s12", "DB2_s13", "DB2_s14", "DB2_s15",
+    "DB2_s26", "DB2_s27", "DB2_s28", "DB2_s29", "DB2_s30",
+    "DB2_s36", "DB2_s37", "DB2_s38", "DB2_s39", "DB2_s40",
+]
+
+# Subset for quick testing / CI runs
+CI_TEST_SUBJECTS = ["DB2_s1", "DB2_s12", "DB2_s15", "DB2_s28", "DB2_s39"]
+
+
+def parse_subjects_args(argv: Optional[List[str]] = None) -> List[str]:
+    """Parse --subjects CLI argument. Returns subject list or CI_TEST_SUBJECTS."""
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument(
+        "--subjects",
+        type=str,
+        default=None,
+        help="Comma-separated subject IDs, e.g. DB2_s1,DB2_s12,DB2_s15",
+    )
+    parser.add_argument(
+        "--ci",
+        action="store_true",
+        help="Use CI test subset (5 subjects)",
+    )
+    args, _ = parser.parse_known_args(argv)
+    if args.subjects:
+        return [s.strip() for s in args.subjects.split(",")]
+    if args.ci:
+        return CI_TEST_SUBJECTS
+    else:
+        return DEFAULT_SUBJECTS
+    return CI_TEST_SUBJECTS
 
 from config.base import ProcessingConfig, SplitConfig, TrainingConfig
 from config.cross_subject import CrossSubjectConfig
@@ -210,6 +247,13 @@ def main():
     # IMPORTANT: Always use ROOT-relative path for data, NEVER hardcoded absolute paths:
     #   BASE_DIR = ROOT / "data"      <-- CORRECT (portable)
     #   BASE_DIR = Path("/home/...")   <-- WRONG (breaks on other machines)
+    #
+    # To run with a subset of subjects:
+    #   python experiments/exp_N_*.py --subjects DB2_s1,DB2_s12,DB2_s15
+    #   python experiments/exp_N_*.py --ci   # uses 5 CI test subjects
+    #
+    # In generated experiments, use:
+    #   ALL_SUBJECTS = parse_subjects_args()
     raise NotImplementedError("Этот файл — шаблон. Используйте конкретные exp_*.py файлы.")
 
 

@@ -1,0 +1,17 @@
+\begin{tabular}{lllrrrrr}
+\toprule
+model_short & model_full & features & mean_acc & std_acc & mean_f1 & std_f1 & n_subjects \\
+\midrule
+Simple Cnn & Simple Cnn & Raw EMG & 0.359 & 0.085 & 0.333 & 0.091 & 20 \\
+Bigru & Bigru & Raw EMG & 0.357 & 0.078 & 0.335 & 0.080 & 20 \\
+Multiscale Cnn & Multiscale Cnn & Raw EMG & 0.355 & 0.081 & 0.334 & 0.088 & 20 \\
+Cnn Gru Attention & Cnn Gru Attention & Raw EMG & 0.348 & 0.088 & 0.331 & 0.091 & 20 \\
+Attention Cnn & Attention Cnn & Raw EMG & 0.342 & 0.080 & 0.311 & 0.087 & 20 \\
+Bilstm Attention & Bilstm Attention & Raw EMG & 0.340 & 0.078 & 0.319 & 0.081 & 20 \\
+Hybrid Powerful Deep & Hybrid Powerful Deep & TD features & 0.339 & 0.072 & 0.317 & 0.070 & 20 \\
+Mlp Powerful & Mlp Powerful & TD features & 0.338 & 0.074 & 0.316 & 0.073 & 20 \\
+Tcn & Tcn & Raw EMG & 0.267 & 0.074 & 0.231 & 0.069 & 20 \\
+Tcn Attn & Tcn Attn & Raw EMG & 0.255 & 0.135 & 0.208 & 0.160 & 20 \\
+Bilstm & Bilstm & Raw EMG & 0.214 & 0.104 & 0.160 & 0.126 & 20 \\
+\bottomrule
+\end{tabular}

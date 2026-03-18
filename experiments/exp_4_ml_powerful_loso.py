@@ -10,19 +10,20 @@ sys.path.insert(0, str(ROOT))
 
 from config.base import ProcessingConfig, SplitConfig, TrainingConfig
 from utils.logging import setup_logging
-from .exp_X_template_loso import run_single_loso_fold, make_json_serializable
+from exp_X_template_loso import run_single_loso_fold, make_json_serializable
 
 
 def main():
-    EXPERIMENT_NAME = "exp4_ml_powerful_loso"
+    EXPERIMENT_NAME = "exp_4_ml_powerful_loso"
     BASE_DIR = ROOT / "data"
-    OUTPUT_DIR = Path(f"./experiments_output/{EXPERIMENT_NAME}")
+    OUTPUT_DIR = Path(f"./experiments_output/{EXPERIMENT_NAME}_1_12_15_28_39")
 
     ALL_SUBJECTS = [
-        "DB2_s1", "DB2_s2", "DB2_s3", "DB2_s4", "DB2_s5",
-        "DB2_s11", "DB2_s12", "DB2_s13", "DB2_s14", "DB2_s15",
-        "DB2_s26", "DB2_s27", "DB2_s28", "DB2_s29", "DB2_s30",
-        "DB2_s36", "DB2_s37", "DB2_s38", "DB2_s39", "DB2_s40",
+          "DB2_s1", 
+        "DB2_s12", 
+        "DB2_s15",
+        "DB2_s28", 
+        "DB2_s39", 
     ]
 
     EXERCISES = ["E1"]

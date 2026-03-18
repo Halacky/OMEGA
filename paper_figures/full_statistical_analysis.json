@@ -1,0 +1,416 @@
+{
+  "description": "Full statistical analysis for H2-H7",
+  "n_comparisons": 22,
+  "bonferroni_k": 22,
+  "comparisons": [
+    {
+      "hypothesis": "H2",
+      "comparison": "H2_none \u2192 H2_fixed_fb",
+      "description": "Raw \u2192 Sinc FB",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.34895680108406474,
+      "mean_f1_v2": 0.3699793236444014,
+      "mean_diff": 0.021022522560336588,
+      "cohens_d": 0.6694078797814019,
+      "p_twosided": 0.00485992431640625,
+      "p_bonferroni": 0.1069183349609375,
+      "bootstrap_95ci": [
+        0.008040040076741872,
+        0.034665014332537325
+      ],
+      "n_improved": 15,
+      "n_worse": 5
+    },
+    {
+      "hypothesis": "H2",
+      "comparison": "H2_none \u2192 H2_uvmd",
+      "description": "Raw \u2192 UVMD",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.34895680108406474,
+      "mean_f1_v2": 0.3723729905036445,
+      "mean_diff": 0.023416189419579677,
+      "cohens_d": 0.6839120678788922,
+      "p_twosided": 0.006389617919921875,
+      "p_bonferroni": 0.14057159423828125,
+      "bootstrap_95ci": [
+        0.009488332124142377,
+        0.03852887494449129
+      ],
+      "n_improved": 14,
+      "n_worse": 6
+    },
+    {
+      "hypothesis": "H2",
+      "comparison": "H2_fixed_fb \u2192 H2_uvmd",
+      "description": "Sinc FB vs UVMD",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3699793236444014,
+      "mean_f1_v2": 0.3723729905036445,
+      "mean_diff": 0.0023936668592430916,
+      "cohens_d": 0.09975222803468915,
+      "p_twosided": 0.49800872802734375,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.008212391570638999,
+        0.01227079301933186
+      ],
+      "n_improved": 13,
+      "n_worse": 7
+    },
+    {
+      "hypothesis": "H3",
+      "comparison": "H3_baseline \u2192 H3_per_band_mix",
+      "description": "Baseline \u2192 Per-band MixStyle",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.36282197378122116,
+      "mean_f1_v2": 0.3794832904896202,
+      "mean_diff": 0.016661316708399078,
+      "cohens_d": 0.5421222063344562,
+      "p_twosided": 0.039989471435546875,
+      "p_bonferroni": 0.8797683715820312,
+      "bootstrap_95ci": [
+        0.0037351261826955658,
+        0.029614901015926322
+      ],
+      "n_improved": 14,
+      "n_worse": 6
+    },
+    {
+      "hypothesis": "H3",
+      "comparison": "H3_baseline \u2192 H3_global_in",
+      "description": "Baseline \u2192 Global IN",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.36282197378122116,
+      "mean_f1_v2": 0.29294926748764183,
+      "mean_diff": -0.0698727062935793,
+      "cohens_d": -1.1260416905459267,
+      "p_twosided": 0.0001049041748046875,
+      "p_bonferroni": 0.002307891845703125,
+      "bootstrap_95ci": [
+        -0.09712940033776506,
+        -0.04339350503898238
+      ],
+      "n_improved": 4,
+      "n_worse": 16
+    },
+    {
+      "hypothesis": "H3",
+      "comparison": "H3_baseline \u2192 H3_adaptive_in",
+      "description": "Baseline \u2192 Adaptive IN",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.36282197378122116,
+      "mean_f1_v2": 0.3690010447880156,
+      "mean_diff": 0.006179071006794465,
+      "cohens_d": 0.24376261841927974,
+      "p_twosided": 0.3299827575683594,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.004547916880188735,
+        0.017183854380867333
+      ],
+      "n_improved": 10,
+      "n_worse": 10
+    },
+    {
+      "hypothesis": "H4",
+      "comparison": "H4_baseline \u2192 H4_adversarial",
+      "description": "MixStyle \u2192 +Adversarial",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39185349002046865,
+      "mean_f1_v2": 0.366019435474333,
+      "mean_diff": -0.02583405454613556,
+      "cohens_d": -2.1615002027375994,
+      "p_twosided": 1.9073486328125e-06,
+      "p_bonferroni": 4.1961669921875e-05,
+      "bootstrap_95ci": [
+        -0.03098466226095317,
+        -0.02093877743155471
+      ],
+      "n_improved": 0,
+      "n_worse": 20
+    },
+    {
+      "hypothesis": "H4",
+      "comparison": "H4_baseline \u2192 H4_contrastive",
+      "description": "MixStyle \u2192 +Contrastive",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39185349002046865,
+      "mean_f1_v2": 0.3899265152508461,
+      "mean_diff": -0.0019269747696225108,
+      "cohens_d": -0.13652741406716548,
+      "p_twosided": 0.5216732025146484,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.007839677349840887,
+        0.00419471341761583
+      ],
+      "n_improved": 8,
+      "n_worse": 12
+    },
+    {
+      "hypothesis": "H4",
+      "comparison": "H4_baseline \u2192 H4_mi_min",
+      "description": "MixStyle \u2192 +MI-min",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39185349002046865,
+      "mean_f1_v2": 0.3529397600242263,
+      "mean_diff": -0.03891372999624232,
+      "cohens_d": -0.9716039467517196,
+      "p_twosided": 0.0003223419189453125,
+      "p_bonferroni": 0.007091522216796875,
+      "bootstrap_95ci": [
+        -0.05672182784319774,
+        -0.02230997553749389
+      ],
+      "n_improved": 2,
+      "n_worse": 18
+    },
+    {
+      "hypothesis": "H4",
+      "comparison": "H4_baseline \u2192 H4_full",
+      "description": "MixStyle \u2192 +All losses",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39185349002046865,
+      "mean_f1_v2": 0.34886253565788466,
+      "mean_diff": -0.042990954362583954,
+      "cohens_d": -1.0364930344987753,
+      "p_twosided": 0.0005855560302734375,
+      "p_bonferroni": 0.012882232666015625,
+      "bootstrap_95ci": [
+        -0.060426064079613075,
+        -0.025557735365125622
+      ],
+      "n_improved": 4,
+      "n_worse": 16
+    },
+    {
+      "hypothesis": "H5",
+      "comparison": "H5_h4_best \u2192 H5_k6",
+      "description": "K=4 vs K=6",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39750843846369327,
+      "mean_f1_v2": 0.3919099742029878,
+      "mean_diff": -0.005598464260705481,
+      "cohens_d": -0.22066075727080423,
+      "p_twosided": 0.3117942810058594,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.016348455522926724,
+        0.005247354289831695
+      ],
+      "n_improved": 8,
+      "n_worse": 12
+    },
+    {
+      "hypothesis": "H5",
+      "comparison": "H5_h4_best \u2192 H5_k8",
+      "description": "K=4 vs K=8",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39750843846369327,
+      "mean_f1_v2": 0.3915844720253034,
+      "mean_diff": -0.00592396643838989,
+      "cohens_d": -0.2624735143576541,
+      "p_twosided": 0.4304332733154297,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.015900637297371255,
+        0.003384277705849635
+      ],
+      "n_improved": 8,
+      "n_worse": 12
+    },
+    {
+      "hypothesis": "H5",
+      "comparison": "H5_h4_best \u2192 H5_se_attn",
+      "description": "K=4 vs K=4+SE",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39750843846369327,
+      "mean_f1_v2": 0.394816911299542,
+      "mean_diff": -0.0026915271641513028,
+      "cohens_d": -0.14226625396478854,
+      "p_twosided": 0.6215133666992188,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.01095325845901749,
+        0.005220943389742065
+      ],
+      "n_improved": 9,
+      "n_worse": 11
+    },
+    {
+      "hypothesis": "H5",
+      "comparison": "H5_h4_best \u2192 H5_groupdro",
+      "description": "K=4 vs K=4+GroupDRO",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.39750843846369327,
+      "mean_f1_v2": 0.3898409767804757,
+      "mean_diff": -0.007667461683217585,
+      "cohens_d": -0.400435135961479,
+      "p_twosided": 0.13272666931152344,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.016063257423979415,
+        0.0004408186566507919
+      ],
+      "n_improved": 7,
+      "n_worse": 13
+    },
+    {
+      "hypothesis": "H6",
+      "comparison": "H6_A \u2192 H6_B",
+      "description": "Raw \u2192 Sinc FB (clean)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3607994436608678,
+      "mean_diff": 0.03675000567818326,
+      "cohens_d": 1.2504557660100932,
+      "p_twosided": 8.20159912109375e-05,
+      "p_bonferroni": 0.001804351806640625,
+      "bootstrap_95ci": [
+        0.023818877991704342,
+        0.04897345486269826
+      ],
+      "n_improved": 18,
+      "n_worse": 2
+    },
+    {
+      "hypothesis": "H6",
+      "comparison": "H6_B \u2192 H6_C",
+      "description": "Sinc \u2192 +MixStyle",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3607994436608678,
+      "mean_f1_v2": 0.3718742247847751,
+      "mean_diff": 0.011074781123907317,
+      "cohens_d": 0.4163118291597293,
+      "p_twosided": 0.069580078125,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.0004208837839455248,
+        0.02214068245040753
+      ],
+      "n_improved": 14,
+      "n_worse": 6
+    },
+    {
+      "hypothesis": "H6",
+      "comparison": "H6_C \u2192 H6_D",
+      "description": "+MixStyle \u2192 +CS heads",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3718742247847751,
+      "mean_f1_v2": 0.3637240359382187,
+      "mean_diff": -0.008150188846556324,
+      "cohens_d": -0.6223305636807571,
+      "p_twosided": 0.01531219482421875,
+      "p_bonferroni": 0.3368682861328125,
+      "bootstrap_95ci": [
+        -0.013726932616527519,
+        -0.0026086590380795614
+      ],
+      "n_improved": 5,
+      "n_worse": 15
+    },
+    {
+      "hypothesis": "H6",
+      "comparison": "H6_A \u2192 H6_C",
+      "description": "Raw \u2192 Sinc+MS (total)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3718742247847751,
+      "mean_diff": 0.047824786802090576,
+      "cohens_d": 1.815651413650458,
+      "p_twosided": 1.9073486328125e-06,
+      "p_bonferroni": 4.1961669921875e-05,
+      "bootstrap_95ci": [
+        0.036756939847990555,
+        0.059388997271601435
+      ],
+      "n_improved": 20,
+      "n_worse": 0
+    },
+    {
+      "hypothesis": "H7",
+      "comparison": "H7_E \u2192 H7_F",
+      "description": "UVMD \u2192 +MixStyle",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3579106475597014,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.017879505408919777,
+      "cohens_d": 0.8367327361365823,
+      "p_twosided": 0.002712249755859375,
+      "p_bonferroni": 0.05966949462890625,
+      "bootstrap_95ci": [
+        0.008858734009905502,
+        0.027086419104529868
+      ],
+      "n_improved": 15,
+      "n_worse": 5
+    },
+    {
+      "hypothesis": "H7",
+      "comparison": "H6_A \u2192 H7_F",
+      "description": "Raw \u2192 UVMD+MS (total)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.05174071498593669,
+      "cohens_d": 2.0759649292969162,
+      "p_twosided": 3.814697265625e-06,
+      "p_bonferroni": 8.392333984375e-05,
+      "bootstrap_95ci": [
+        0.04059133621527527,
+        0.0620881970958346
+      ],
+      "n_improved": 19,
+      "n_worse": 1
+    },
+    {
+      "hypothesis": "cross",
+      "comparison": "H6_B \u2192 H7_E",
+      "description": "Sinc vs UVMD (no MS)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3607994436608678,
+      "mean_f1_v2": 0.3579106475597014,
+      "mean_diff": -0.002888796101166351,
+      "cohens_d": -0.16101188738982938,
+      "p_twosided": 0.7841262817382812,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.010844729003958959,
+        0.004255743545596869
+      ],
+      "n_improved": 10,
+      "n_worse": 10
+    },
+    {
+      "hypothesis": "cross",
+      "comparison": "H6_C \u2192 H7_F",
+      "description": "Sinc+MS vs UVMD+MS",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3718742247847751,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.003915928183846108,
+      "cohens_d": 0.2485905720004675,
+      "p_twosided": 0.4304332733154297,
+      "p_bonferroni": 1.0,
+      "bootstrap_95ci": [
+        -0.0025609537606024043,
+        0.010799396880234275
+      ],
+      "n_improved": 11,
+      "n_worse": 9
+    }
+  ],
+  "friedman_h5": {
+    "chi2": 2.9428571428571217,
+    "p_value": 0.7087953336861154,
+    "n_subjects": 20,
+    "variants": [
+      "H5_h4_best",
+      "H5_k6",
+      "H5_k8",
+      "H5_se_attn",
+      "H5_groupdro",
+      "H5_best_combo"
+    ]
+  }
+}

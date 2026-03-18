@@ -1,0 +1,183 @@
+{
+  "description": "Wilcoxon signed-rank tests for H6+H7 ablation",
+  "n_comparisons": 8,
+  "bonferroni_k": 8,
+  "comparisons": [
+    {
+      "comparison": "A \u2192 B",
+      "description": "Decomposition effect (Sinc FB)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3607994436608678,
+      "mean_diff": 0.03675000567818326,
+      "std_diff": 0.028645135417028005,
+      "cohens_d": 1.2504557660100932,
+      "wilcoxon_stat": 10.0,
+      "p_twosided": 8.20159912109375e-05,
+      "p_onesided": 4.100799560546875e-05,
+      "p_bonferroni_twosided": 0.0006561279296875,
+      "p_bonferroni_onesided": 0.00032806396484375,
+      "bootstrap_95ci": [
+        0.023818877991704342,
+        0.04897345486269826
+      ],
+      "n_improved": 18,
+      "n_same": 0,
+      "n_worse": 2
+    },
+    {
+      "comparison": "B \u2192 C",
+      "description": "MixStyle effect (on Sinc FB)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3607994436608678,
+      "mean_f1_v2": 0.3718742247847751,
+      "mean_diff": 0.011074781123907317,
+      "std_diff": 0.025928548377380775,
+      "cohens_d": 0.4163118291597293,
+      "wilcoxon_stat": 56.0,
+      "p_twosided": 0.069580078125,
+      "p_onesided": 0.0347900390625,
+      "p_bonferroni_twosided": 0.556640625,
+      "p_bonferroni_onesided": 0.2783203125,
+      "bootstrap_95ci": [
+        -0.0004208837839455248,
+        0.02214068245040753
+      ],
+      "n_improved": 14,
+      "n_same": 0,
+      "n_worse": 6
+    },
+    {
+      "comparison": "C \u2192 D",
+      "description": "Content/Style heads effect",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3718742247847751,
+      "mean_f1_v2": 0.3637240359382187,
+      "mean_diff": -0.008150188846556324,
+      "std_diff": 0.012764633329727434,
+      "cohens_d": -0.6223305636807571,
+      "wilcoxon_stat": 41.0,
+      "p_twosided": 0.01531219482421875,
+      "p_onesided": 0.9931917190551758,
+      "p_bonferroni_twosided": 0.12249755859375,
+      "p_bonferroni_onesided": 1.0,
+      "bootstrap_95ci": [
+        -0.013726932616527519,
+        -0.0026086590380795614
+      ],
+      "n_improved": 5,
+      "n_same": 0,
+      "n_worse": 15
+    },
+    {
+      "comparison": "E \u2192 F",
+      "description": "MixStyle effect (on UVMD)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3579106475597014,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.017879505408919777,
+      "std_diff": 0.020827183480847923,
+      "cohens_d": 0.8367327361365823,
+      "wilcoxon_stat": 28.0,
+      "p_twosided": 0.002712249755859375,
+      "p_onesided": 0.0013561248779296875,
+      "p_bonferroni_twosided": 0.021697998046875,
+      "p_bonferroni_onesided": 0.0108489990234375,
+      "bootstrap_95ci": [
+        0.008858734009905502,
+        0.027086419104529868
+      ],
+      "n_improved": 15,
+      "n_same": 0,
+      "n_worse": 5
+    },
+    {
+      "comparison": "B \u2192 E",
+      "description": "Sinc FB vs UVMD (no MixStyle)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3607994436608678,
+      "mean_f1_v2": 0.3579106475597014,
+      "mean_diff": -0.002888796101166351,
+      "std_diff": 0.017487219084895703,
+      "cohens_d": -0.16101188738982938,
+      "wilcoxon_stat": 97.0,
+      "p_twosided": 0.7841262817382812,
+      "p_onesided": 0.6219167709350586,
+      "p_bonferroni_twosided": 1.0,
+      "p_bonferroni_onesided": 1.0,
+      "bootstrap_95ci": [
+        -0.010844729003958959,
+        0.004255743545596869
+      ],
+      "n_improved": 10,
+      "n_same": 0,
+      "n_worse": 10
+    },
+    {
+      "comparison": "C \u2192 F",
+      "description": "Sinc+MixStyle vs UVMD+MixStyle",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.3718742247847751,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.003915928183846108,
+      "std_diff": 0.015353658172722075,
+      "cohens_d": 0.2485905720004675,
+      "wilcoxon_stat": 83.0,
+      "p_twosided": 0.4304332733154297,
+      "p_onesided": 0.21521663665771484,
+      "p_bonferroni_twosided": 1.0,
+      "p_bonferroni_onesided": 1.0,
+      "bootstrap_95ci": [
+        -0.0025609537606024043,
+        0.010799396880234275
+      ],
+      "n_improved": 11,
+      "n_same": 0,
+      "n_worse": 9
+    },
+    {
+      "comparison": "A \u2192 C",
+      "description": "Raw \u2192 Sinc+MixStyle (total H6 gain)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3718742247847751,
+      "mean_diff": 0.047824786802090576,
+      "std_diff": 0.025673340048760766,
+      "cohens_d": 1.815651413650458,
+      "wilcoxon_stat": 0.0,
+      "p_twosided": 1.9073486328125e-06,
+      "p_onesided": 9.5367431640625e-07,
+      "p_bonferroni_twosided": 1.52587890625e-05,
+      "p_bonferroni_onesided": 7.62939453125e-06,
+      "bootstrap_95ci": [
+        0.036756939847990555,
+        0.059388997271601435
+      ],
+      "n_improved": 20,
+      "n_same": 0,
+      "n_worse": 0
+    },
+    {
+      "comparison": "A \u2192 F",
+      "description": "Raw \u2192 UVMD+MixStyle (total H7 gain)",
+      "n_subjects": 20,
+      "mean_f1_v1": 0.32404943798268454,
+      "mean_f1_v2": 0.3757901529686212,
+      "mean_diff": 0.05174071498593669,
+      "std_diff": 0.024292612128657853,
+      "cohens_d": 2.0759649292969162,
+      "wilcoxon_stat": 1.0,
+      "p_twosided": 3.814697265625e-06,
+      "p_onesided": 1.9073486328125e-06,
+      "p_bonferroni_twosided": 3.0517578125e-05,
+      "p_bonferroni_onesided": 1.52587890625e-05,
+      "bootstrap_95ci": [
+        0.04059133621527527,
+        0.0620881970958346
+      ],
+      "n_improved": 19,
+      "n_same": 0,
+      "n_worse": 1
+    }
+  ]
+}

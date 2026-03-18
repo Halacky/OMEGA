@@ -1,19 +1,24 @@
 import logging
-import cupy as cp
+try:
+    import cupy as cp
+    _HAS_CUPY = True
+except ImportError:
+    cp = None
+    _HAS_CUPY = False
 import numpy as np
 from typing import Dict, List
 
 class GestureSegmenter:
     """Segmentation of signal by gestures"""
-    
+
     def __init__(self, logger: logging.Logger, use_gpu: bool = True):
         self.logger = logger
-        self.use_gpu = use_gpu and cp.cuda.is_available()
+        self.use_gpu = use_gpu and _HAS_CUPY and cp.cuda.is_available()
         
         if self.use_gpu:
             self.logger.info("GPU enable, use CuPy")
         else:
-            self.logger.info("GPU diasabple, use NumPy")
+            self.logger.info("GPU disabled, using NumPy")
     
     def segment_by_gestures(self, emg: np.ndarray, stimulus: np.ndarray, include_rest: bool = True) -> Dict[int, List[np.ndarray]]:
         """

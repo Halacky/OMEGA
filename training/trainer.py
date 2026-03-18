@@ -1,6 +1,3 @@
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -24,7 +21,6 @@ from processing.features import HandcraftedFeatureExtractor
 from utils.data_quality_check import DataQualityDiagnostic
 from processing.powerful_features import PowerfulFeatureExtractor
 from sklearn.decomposition import PCA  # NEW
-from models.hybrid_powerful_deep import HybridPowerfulDeepNet
 from models.tcn import TemporalConvNet, TemporalConvNetWithAttention
 
 
@@ -161,29 +157,22 @@ class WindowClassifierTrainer:
                 gru_layers=2,
                 dropout=self.cfg.dropout
             )
-        elif model_type == "hybrid_powerful_deep":
-            # Note: here "in_channels" is actually "feature dimension" when using handcrafted features
-            hidden_dim = getattr(self.cfg, "hybrid_hidden_dim", 256)
-            use_da = getattr(self.cfg, "hybrid_use_domain_adaptation", True)
-            num_domains = getattr(self.cfg, "hybrid_num_domains", 2)
-            grl_lambda = getattr(self.cfg, "hybrid_grl_lambda", 1.0)
-
-            model = HybridPowerfulDeepNet(
-                in_features=in_channels,
-                num_classes=num_classes,
-                num_domains=num_domains,
-                hidden_dim=hidden_dim,
-                dropout=self.cfg.dropout,
-                use_domain_adaptation=use_da,
-                grl_lambda=grl_lambda,
-            )
         else:
-            raise ValueError(
-                f"Unknown model type: {model_type}. "
-                f"Choose from: resnet1d, simple_cnn, attention_cnn, tcn, multiscale_cnn, "
-                f"bilstm, bilstm_attention, bigru, cnn_lstm, cnn_gru_attention, "
-                f"hybrid_powerful_deep"
-            )
+            from models import get_model
+            custom_cls = get_model(model_type)
+            if custom_cls is not None:
+                model = custom_cls(
+                    in_channels=in_channels,
+                    num_classes=num_classes,
+                    dropout=self.cfg.dropout,
+                )
+            else:
+                raise ValueError(
+                    f"Unknown model type: {model_type}. "
+                    f"Choose from: resnet1d, simple_cnn, attention_cnn, tcn, multiscale_cnn, "
+                    f"bilstm, bilstm_attention, bigru, cnn_lstm, cnn_gru_attention, "
+                    f"or register a custom model with models.register_model()"
+                )
         return model
 
     def _filter_nonempty(self, d: Dict[int, np.ndarray]) -> Dict[int, np.ndarray]:
@@ -191,6 +180,32 @@ class WindowClassifierTrainer:
             gid: arr for gid, arr in d.items()
             if isinstance(arr, np.ndarray) and arr.ndim == 3 and len(arr) > 0
         }
+
+    def _make_train_dataset(self, X_train: np.ndarray, y_train: np.ndarray, use_aug: bool):
+        """
+        Factory for creating the training dataset. Override in subclasses to inject
+        custom augmentation while reusing all other training logic.
+
+        Args:
+            X_train: (N, C, T) normalized training windows.
+            y_train: (N,) integer class labels.
+            use_aug: whether augmentation is enabled (from cfg.aug_apply).
+
+        Returns:
+            A Dataset instance. Val/test always use plain WindowDataset (not overridden).
+
+        LOSO note: this method receives only training-split data from training subjects.
+        No test-subject data is ever passed here.
+        """
+        if use_aug:
+            return AugmentedWindowDataset(
+                X_train, y_train,
+                noise_std=getattr(self.cfg, "aug_noise_std", 0.02),
+                max_warp=getattr(self.cfg, "aug_time_warp_max", 0.1),
+                apply_noise=getattr(self.cfg, "aug_apply_noise", True),
+                apply_time_warp=getattr(self.cfg, "aug_apply_time_warp", False),
+            )
+        return WindowDataset(X_train, y_train)
 
     def _prepare_splits_arrays(self, splits: Dict[str, Dict[int, np.ndarray]]) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, List[int], Dict[int, str]]:
         """
@@ -456,17 +471,9 @@ class WindowClassifierTrainer:
             ds_val   = FeatureDataset(X_val, y_val) if len(X_val) > 0 else None
             ds_test  = FeatureDataset(X_test, y_test) if len(X_test) > 0 else None
         else:
-            # Standard models use 3D window data; train with augmentation when enabled
-            if use_aug:
-                ds_train = AugmentedWindowDataset(
-                    X_train, y_train,
-                    noise_std=getattr(self.cfg, "aug_noise_std", 0.02),
-                    max_warp=getattr(self.cfg, "aug_time_warp_max", 0.1),
-                    apply_noise=getattr(self.cfg, "aug_apply_noise", True),
-                    apply_time_warp=getattr(self.cfg, "aug_apply_time_warp", False),
-                )
-            else:
-                ds_train = WindowDataset(X_train, y_train)
+            # Standard models use 3D window data.
+            # _make_train_dataset is overridable: subclasses inject custom augmentation here.
+            ds_train = self._make_train_dataset(X_train, y_train, use_aug)
             ds_val   = WindowDataset(X_val, y_val) if len(X_val) > 0 else None
             ds_test  = WindowDataset(X_test, y_test) if len(X_test) > 0 else None
         worker_init_fn = get_worker_init_fn(self.cfg.seed)
@@ -564,6 +571,9 @@ class WindowClassifierTrainer:
                 else:
                     logits = model(xb)
                     loss = criterion(logits, yb)
+                    # Auxiliary loss support (e.g. MoE load balancing)
+                    if hasattr(model, '_aux_loss') and model._aux_loss is not None:
+                        loss = loss + model._aux_loss
 
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
@@ -610,9 +620,6 @@ class WindowClassifierTrainer:
             self.logger.info(f"[Epoch {epoch:02d}/{self.cfg.epochs}] "
                              f"Train: loss={train_loss:.4f}, acc={train_acc:.3f} | "
                              f"Val: loss={val_loss:.4f}, acc={val_acc:.3f}")
-            print(f"[Epoch {epoch:02d}/{self.cfg.epochs}] "
-                    f"Train: loss={train_loss:.4f}, acc={train_acc:.3f} | "
-                    f"Val: loss={val_loss:.4f}, acc={val_acc:.3f}")
             if dl_val is not None:
                 if val_loss < best_val_loss - 1e-6:
                     best_val_loss = val_loss

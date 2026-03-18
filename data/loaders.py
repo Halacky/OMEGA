@@ -30,8 +30,8 @@ class NinaProLoader:
             if key in data:
                 fields[key] = data[key]
                 if isinstance(fields[key], np.ndarray):
-                    self.logger.info(f"Filed '{key}': shape={fields[key].shape}, dtype={fields[key].dtype}")
+                    self.logger.info(f"Field '{key}': shape={fields[key].shape}, dtype={fields[key].dtype}")
             else:
-                self.logger.warning(f"Filed '{key}' not find")
+                self.logger.warning(f"Field '{key}' not found")
         
         return fields
