@@ -1,7 +1,0 @@
-,accuracy,accuracy,accuracy,accuracy,f1_macro,f1_macro,f1_macro,f1_macro
-,mean,std,min,max,mean,std,min,max
-category,,,,,,,,
-Feature CNN/LSTM,0.297,0.06,0.137,0.445,0.275,0.066,0.092,0.44
-Hybrid,0.339,0.072,0.184,0.464,0.317,0.07,0.132,0.445
-ML Models,0.339,0.075,0.129,0.498,0.317,0.078,0.073,0.483
-Raw CNN/LSTM,0.315,0.103,0.081,0.537,0.285,0.117,0.018,0.517
