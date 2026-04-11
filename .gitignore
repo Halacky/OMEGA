@@ -1,0 +1,46 @@
+# ============================================================
+# OMEGA — whitelist-based .gitignore
+# Only these directories are tracked:
+#   config, data (code only), docs, evaluation, experiments,
+#   models, processing, training, utils, visualization
+# ============================================================
+
+# Ignore everything by default
+/*
+
+# --- Whitelist directories ---
+!/config/
+!/data/
+!/docs/
+!/evaluation/
+!/experiments/
+!/models/
+!/processing/
+!/training/
+!/utils/
+!/visualization/
+
+# --- Allow root-level essentials ---
+!/.gitignore
+!/requirements.txt
+!/__init__.py
+
+# --- data/: only code, no source/data files ---
+data/DB2_*/
+data/papers_for_research/
+
+# --- Exclude CLAUDE.md everywhere ---
+CLAUDE.md
+
+# --- Python cache (inside whitelisted dirs) ---
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# --- OS / IDE artifacts ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

@@ -1,0 +1,50 @@
+# Remote GPU servers configuration for distributed experiment execution.
+#
+# Each server must have:
+#   - Docker with NVIDIA runtime installed
+#   - SSH access with key-based auth
+#   - Enough disk space for data and results
+#
+# Data is synced via rsync; results collected after experiment completion.
+
+# Where to collect results on the host machine
+host_results_dir: "./results_collected"
+# Docker image name
+docker_image: "omega-experiment"
+# Default subjects for CI/test runs (override per-experiment with --subjects)
+ci_subjects: "DB2_s1,DB2_s12,DB2_s15,DB2_s28,DB2_s39"
+servers:
+  - name: "gpu-server-1"
+    host: "142.170.89.112"
+    port: 31380
+    user: "root"
+    ssh_key: "~/.ssh/id_rsa"
+    gpu_ids: [0]
+    # Working directory on the remote server
+    work_dir: "/home/kirill/omega_experiments"
+    # Where EMG data is stored on the remote server
+    data_dir: "/home/kirill/omega_data"
+    # Max concurrent experiments on this server
+    max_concurrent: 1
+
+  # Add more servers as needed:
+  # - name: "gpu-server-2"
+  #   host: "50.92.52.119"
+  #   port: 42914
+  #   user: "root"
+  #   ssh_key: "~/.ssh/id_rsa"
+  #   gpu_ids: [0]
+  #   work_dir: "/home/kirill/omega_experiments"
+  #   data_dir: "/home/kirill/omega_data"
+  #   max_concurrent: 1
+    
+  # - name: "gpu-server-3"
+  #   host: "89.25.97.250"
+  #   port: 17409
+  #   user: "root"
+  #   ssh_key: "~/.ssh/id_rsa"
+  #   gpu_ids: [0]
+  #   work_dir: "/home/kirill/omega_experiments"
+  #   data_dir: "/home/kirill/omega_data"
+  #   max_concurrent: 1
+
